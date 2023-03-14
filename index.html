@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin: 0px; overflow: hidden">
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-entity geometry="primitive: sphere; phiLength: 360.54" animation="" material="color: #f4a4c0" scale="0.7 0.7 0.7" id="head" visible=""></a-entity>
+        <a-entity geometry="primitive: torus" animation="" material="color: #f4a4c0" scale="0.3 0.3 0.3" id="leftEar" visible="" position="-0.5 0 -0.7" rotation="-8000.000000000001 0 0"></a-entity>
+        <a-entity geometry="primitive: torus" animation="" material="color: #f4a4c0" scale="0.3 0.3 0.3" id="rightEar" visible="" position="0.5 0 -0.7" rotation="-800 0 0"></a-entity>
+        <a-entity geometry="primitive: sphere; phiLength: 360.54" animation="" material="color: #ffffff" scale="0.15 0.15 0.15" id="leftWhiteEye" visible="" position="-0.1 0.6 -0.2"></a-entity>
+        <a-entity geometry="primitive: sphere; phiLength: 360.54" animation="" material="color: #ffffff" scale="0.15 0.15 0.15" id="rightWhiteEye" visible="" position="0.25 0.6 -0.2"></a-entity>
+        <a-entity geometry="primitive: sphere; phiLength: 360.54" animation="" material="color: #000000" scale="0.06 0.06 0.06" id="leftBlackEye" visible="" position="-0.13 0.75 -0.2"></a-entity>
+        <a-entity geometry="primitive: sphere; phiLength: 360.54" animation="" material="color: #000000" scale="0.06 0.06 0.06" id="rightBlackEye" visible="" position="0.25 0.75 -0.2"></a-entity>
+        <a-entity geometry="primitive: octahedron" animation="" material="color: #77bb41" scale="0.2 0.3 0.2" id="sims" visible="" position="0 0 -1.3" rotation="-8000.000000000001 0 0"></a-entity>
+        <a-entity geometry="primitive: cone" animation="" material="color: #791a3e" scale="0.3 -0.3 0.3" id="mouth" visible="" position="0 0.65 0.2" rotation="-8000.000000000001 0 0"></a-entity>
+        <a-entity id="name" text="color: #5a1c00; value: Bunns" scale="5 5 2.5" position="2.2 0.8 0.8" rotation="-8000.000000000001 0 0"></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity> 
+    </a-scene>
+  </body>
+</html>
